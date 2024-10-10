@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Formulários</h1>
+        <form action="/PAGINA-ONDE-PROCESSA-OS-DADOS-DO-FORM">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+                <label for="Nome">Nome :</label>
+                <input type="text" minlength="3" id="nome" required>
+                <label for="Idade">Idade :</label>
+                <input type="age" minlength="1" maxlength="3" required>
+                <label for="cpf">CPF :</label>
+                <input type="cpf" minlength="11" maxlength="11" required>
+            </fieldset>
+                <fieldset>
+                <legend>Endereço</legend>
+                <label for="tipo_endereço">Tipo :</label>
+                <select id="tipo_endereço">
+                    <option value="">Rua</option>
+                    <option value="">Estrada</option>
+                    <option value="">Rodovia</option>
+                    <option value="">Outros</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Fale com a galera</legend>
+                <label for="msg">Mensagem</label>
+                <textarea type="text" id="msg"></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
