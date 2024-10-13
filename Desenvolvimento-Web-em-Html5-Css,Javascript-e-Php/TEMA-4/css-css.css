@@ -1,0 +1,24 @@
+html{
+background-color: red ;
+}
+p{
+text-align: center;
+color: azure;
+font-size: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 5px;
+padding-left: 5px;
+}
+/* ID - usar para um elemento apenas*/
+#texto-principal{
+
+}
+/* CLASSES - usar para um ou mais elementos*/
+.borda{
+
+}
+
+.cascata{
+
+}
