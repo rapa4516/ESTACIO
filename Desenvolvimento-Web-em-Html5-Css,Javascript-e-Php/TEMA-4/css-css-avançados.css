@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Links;
+    src: url(fonts/Agdasima/Agdasima-Bold.ttf) format('truetype');
+
+}
+
+a{
+    font-family: Links;
+}
+
+h3{
+    color: blue;
+    font-family: Links;
+}
+
+
+.primeiro-container::first-line{
+    color:red;
+    background-color: black;
+    font-family: Links;
+}
+
+#link:hover{
+    font-family: Links;
+    color: orange;
+}
+
+#box-model{
+    background-color: green;
+    padding: 30px 40px 30px 40px;
+    border: 30px solid yellow;
+    margin-top: 20px;
+
+    font-family: Links;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    background-color: violet;
+    padding: 10px;
+}

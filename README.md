@@ -1,1 +1,1 @@
-ZXCASDQWEASDZXC
+ZXCASDQWEASDZXC - "esse é um apenas uma forma de registrar e comprovar meu desenvolvimento no curso de Ciências da Computação na Universidade Estácio. Fique livre para desbravar minha trajetoria... e seja bem-vindo, bora desenvolver."

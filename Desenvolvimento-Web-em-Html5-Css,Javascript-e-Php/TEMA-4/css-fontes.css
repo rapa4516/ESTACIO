@@ -1,4 +1,24 @@
 @font-face {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    src: url();
+    font-family: "Agdasima-Bold";
+    src:
+    url(fonts/Agdasima/Agdasima-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url(fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1{
+    font-family: Open-Sans;
+}
+
+body{
+    font-family: Agdasima-Bold;
+    background-color: hsl(0, 100%, 50%);
+}
+
