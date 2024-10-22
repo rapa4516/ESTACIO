@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <label>Valor A</label>
+            <input type="number" id="v1"/>
+
+            <label>Valor B</label>
+            <input type="number" id="v2"/>
+
+            <label>Operação</label>
+
+            <select id="oper">
+                <option>Soma</option>
+                <option>Subtração</option>
+                <option>Multiplicação</option>
+                <option>Divisão</option>
+                <option>Potência</option>
+            </select>
+
+            <a href="#" onclick="executar()">Executar</a>
+        </form>
+        <div id="resp">O resultado aparece aqui</div>
+        <script src="js-js-na-pratica.js"></script>
+        <script>
+            const executar = () => {
+                // ATRIBUIR VALORES DOS ID'S HTML E CONVERSÃO DE STRING -> NUMERO (eval)
+                const a = eval(document.getElementById("v1").value);
+                const b = eval(document.getElementById("v2").value);
+                let oper = eval(document.getElementById("oper").selectedindex);
+                // 
+                let resultado = 
+                (oper==0)?somar(a,b): 
+                (oper==1)?subtrair(a,b): 
+                (oper==2)?multiplicar(a,b):
+                (oper==3)?dividir(a,b):
+                exponencial(a,b);
+                document.getElementById("resp").innerHTML = `O resultado da operação é ${resultado}`;
+            }
+        </script>
+
+    </body>
+</html>

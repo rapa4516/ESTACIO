@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <button onclick="execute()">
+            Click here
+        </button>
+
+        <script>
+            execute = () => {
+                const values = [1,6,5,9,2];
+                values.sort();
+                console.log(values);
+                console.log('Value in position 3: ${values[3]}');
+                values.forEach((element, index) => console.log('Value[${index}]:${element}'));
+                const sumDouble = values.map((e)=>e*2).reduce((a,b)=> a+b);
+                console.log("Sum 2x = " + sumDouble);
+            }
+        </script>
+    </body>
+</html>

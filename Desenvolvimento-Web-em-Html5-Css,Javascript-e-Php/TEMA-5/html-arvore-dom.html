@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div>
+            <div id="d1" style="text-align: center;">
+                Original Content
+            </div>
+            <button onclick="Alter()" style="position: relative; top: 50%; left: 50%;">Alter</button>
+           <!-- inline -->
+            <script>
+                const Alter = () =>{
+                    let d1 = document.getElementById("d1");
+                    d1.innerHTML = "Content Alter"
+                    d1.style.backgroundColor = "red";
+                    d1.style.textAlign = "center";
+                }
+            </script>
+        </div>
+    </body>
+</html>
