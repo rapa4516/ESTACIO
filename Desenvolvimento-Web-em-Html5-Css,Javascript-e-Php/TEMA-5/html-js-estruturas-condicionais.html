@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2 style="background-color: red;">Estrutura IF</h2>
+        <p>Apresenta "Bom dia !" se for menos que 12:00.</p>
+        <p>Apresenta "Boa tarde !" se for mais que 12:00, e menos que 18:00.</p>
+        <p>Apresenta "Boa noite !" se for mais que 18:00.</p>
+        <p id="demo">Já passou de meio-dia</p>
+
+        <h1 style="background-color: red;">JS switch</h1>
+        <h2>Dia da semana</h2>
+        <p id="demo2"></p>
+
+        <script>
+            // METODO UTILIZANDO IF/ELSE 
+            if(new Date().getHours()<12){
+                document.getElementById("demo").innerHTML = "Bom dia !";
+                alert("Bom dia !");
+            }else 
+            if (new Date().getHours()<18){
+                document.getElementById("demo").innerHTML = "Boa tarde!";
+                alert("Boa tarde !");
+            }else{
+                document.getElementById("demo").innerHTML = "Boa Noite !";
+                alert("Boa noite !");
+            }
+
+            // METODO DE OPERADOR DE DECISÃO
+            let tempo = new Date().getHours();
+            let html = document.getElementById("demo");
+
+            html.innerHTML = 
+            (tempo < 12)? "Bom dia !":
+            (tempo < 18)? "Boa tarde !":
+            "Boa noite !";
+
+            // METODO SWITCH
+            let day;
+            switch(new Date().getDay()){
+                case 0: day = "Domingo"; break
+                case 1: day = "Segunda"; break
+                case 2: day = "Terça"; break
+                case 3: day = "Quarta"; break
+                case 4: day = "Quinta"; break
+                case 5: day = "Sexta"; break
+                case 6: day = "Sabado";
+            }
+
+            document.getElementById("demo2").innerHTML = "Hoje é " + day;
+        </script>
+    </body>
+</html>

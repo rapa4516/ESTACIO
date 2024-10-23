@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>h1{background-color: red;}</style>
+    </head>
+    <body>
+
+        <h1> While</h1>
+        <p id="demowhile">Sem funcionar.</p>
+
+        <h1>For</h1>
+        <p id="demofor">Sem funcionar.</p>
+
+        <h1>For...in</h1>
+        <p id="d1">Sem funcionar.</p>
+
+        <h1>For...in em vetor</h1>
+        <p id="d2">Sem funcionar.</p>
+
+        <h1>For...of em vetor</h1>
+        <p id="d3">Sem funcionar.</p>
+
+        <script>
+            // WHILE
+            let a = 1;
+            while(a <= 10){
+                    console.log(a);
+                    document.getElementById("demowhile").innerHTML = a;
+                    a++; 
+            }
+
+            // FOR
+            for (let b = 1; b <=10; b++){
+                console.log(b);
+                document.getElementById("demofor").innerHTML = b;
+            }
+
+            // FOR...IN
+            const person = {fname:"John", lname:"Doe", age:25};
+            let text = "";
+            for(let x in person){
+                text += person[x] + " ";
+            }
+
+            document.getElementById("d1").innerHTML = text;
+
+            // FOR...IN em vetor
+            const cars = ["Ferrari", "BMW", "Honda", "Chevrolet"];
+            let text2 = "";
+            for(let y in cars){
+                text2 += cars[y] + " ";
+            }
+
+            document.getElementById("d2").innerHTML = text2;
+
+            // FOR...OF em vetor
+            const animals = ["Cavalo", "Girafa", "Mamute", "Leão"];
+            let text3 = "";
+            for(let z of animals){
+                text3 += z + " ";
+            }
+
+            document.getElementById("d3").innerHTML = text3;
+
+        </script>
+    </body>
+</html>

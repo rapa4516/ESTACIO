@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head><style>h1{background-color: red;}</style></head>
+<body>
+    <h1>FOR...OF</h1>
+	<p id="d1">Sem funcionar</p>
+
+    <h1>FOR...IN</h1>
+    <p id="d2">Sem funcionar</p>
+
+    <h1>ORDENAÇÃO, MAPEAMENTO e REDUÇÃO</h1>
+    <button onclick="executar()">Executar</button>
+    <p id="d3">Sem funcionar</p>
+    <p id="d31">Sem funcionar</p>
+    <p id="d32">Sem funcionar</p>
+
+    <h1>Randoms</h1>
+    <table style="width: 100%;">
+    <script>
+        let cores = ["red", "white", "pink"];
+        let cores2 = new Array("red", "white", "pink");
+        let vazio = [];
+        let vazio2 = new Array();
+		
+        // FOR...OF
+        let text = "";
+        for (let x of cores) {
+            text += x + " ";
+
+        }
+        document.getElementById("d1").innerHTML = text;
+
+        // FOR...IN
+        let text2 = "";
+        for (let y in cores){
+            text2 += cores[y] + " ";
+        }
+        document.getElementById("d2").innerHTML = text2;
+
+        //EXECUTAR
+        executar = () =>{
+            const valores = [1,6,5,8,2];
+            valores.sort();
+            console.log(valores);
+            document.getElementById("d3").innerHTML = valores;
+
+            console.log(`Valor na posição 3: ${valores[3]}`);
+            document.getElementById("d31").innerHTML = "Valor na posição 3: " + valores[3];
+                        // element = indice (1,6,5,8,2) - index = posição (0,1,2,3,4)
+            valores.forEach((element,index) => console.log(`Valor[${index}]:${element}`));
+            const somaDobro = valores.map((e)=>e*2).reduce((a,b)=>a+b);
+            
+            console.log("Soma 2x = "+ somaDobro);
+            document.getElementById("d32").innerHTML = "Soma do dobro: " + somaDobro;
+        }
+
+        //RANDOMS
+        const coris = ["red", "blue", "yellow", "green", "pink"];
+        for(let i=1; i<10; i++){
+            document.write("<tr>");
+            for(let j=1; j<10; j++){
+                let pos = Math.trunc(Math.random()*5);
+                document.write(`<td style='background-color:${coris[pos]}'>&nbsp;</td>`);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
