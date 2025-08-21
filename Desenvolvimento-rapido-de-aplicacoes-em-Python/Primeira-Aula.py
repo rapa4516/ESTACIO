@@ -13,7 +13,7 @@ print(f"Sou maior de 18 ? " {maior18})
 def somar(numero1: int, numero2: int) -> int:
 
     """
-
+    
     """
 
     soma = numero1 + numero2
